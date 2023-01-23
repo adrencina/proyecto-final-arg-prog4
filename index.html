@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;900&display=swap" rel="stylesheet">
     <title>Curriculum Vitae</title>
 </head>
 <body>
@@ -16,28 +19,46 @@
             <h1>John Ruiz</h1>
             <p>Desarrollador Front-end</p>
         </div>
+        <div class="boton-header">
+            <button class="boton-1" type="submit">Descargar CV</button>
+        </div>
         <nav>
             <ul>
-                <li><a href="#">información</a></li>
-                <li><a href="#">experiencia</a></li>
-                <li><a href="#">habilidades</a></li>
+                <li><a href="#info-personal">información</a></li>
+                <li><a href="#experiencia">experiencia</a></li>
+                <li><a href="#habilidades">habilidades</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="info-personal">
-            <h2>Información Personal</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae possimus soluta, veniam perferendis ad eaque voluptates. Eaque recusandae magni praesentium.</p>
-        </section>
+        <section class="container-card" id="info-personal">
+            <div class="card">
+                <h2 class="card-titulo">Información Personal</h2>
+                <!-- <p class="card-subtitulo">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+                <div class="card-datos">
+                    <ul class="Datos">
+                        <li class="text-1">Edad:</li>
+                        <li class="text-1">E-mail:</li>
+                        <li class="text-1">Tel. Movil:</li>
+                        <li class="text-1">Dirección:</li>
+                        <li class="text-1">Idiomas:</li>
+                    </ul>
+                </div>
+            </div>
+            </section>
         <br>
-        <section id="experiencia">
+        <section class="container-card" id="experiencia">
+            <div class="2">
             <h2>experiencia</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae possimus soluta, veniam perferendis ad eaque voluptates. Eaque recusandae magni praesentium.</p>
+            </div>
         </section>
         <br>
-        <section id="habilidades">
+        <section class="container-card" id="habilidades">
+            <div class="3">
             <h2>habilidades</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae possimus soluta, veniam perferendis ad eaque voluptates. Eaque recusandae magni praesentium.</p>
+            </div>
         </section>
     </main>
     <script src="./js/script.js"></script>

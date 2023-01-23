@@ -2,13 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 html{
     font-size: 62.5%;
 }
 header{
-    background-color: darkolivegreen;
+    background-color: #2d6363;
     font-size: 2rem;
     display: flex;
     align-items: center;
@@ -17,10 +17,12 @@ header{
     padding: auto;
     padding-top: 60px;
     color: white;
+    text-align: center;
 }
 picture img{
     border-radius: 100%;
     height: 200px;
+    box-shadow: 0px 5px 25px 0px rgb(0 0 0 / 20%);
 }
 
 nav ul{
@@ -33,10 +35,73 @@ nav ul{
 }
 nav ul li{
     text-decoration: none;
-    padding: 0 20px;
 }
 li a{
     text-decoration: none;
     font-style: none;
+    padding: 5px;
+    margin: 0 10px;
     color: #dbdbdb;
+    text-transform: uppercase;
+}
+
+li a:hover{
+    background-color: darkcyan;
+    color: #fafafa;
+    border-radius: 5px;
+
+}
+
+.boton-1{
+    background-color:#edf119e3;
+    color:#409696;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    padding: 5px;
+    border-color:transparent;
+    margin: 20px 5px 0px 5px;
+    box-shadow: 0px 5px 25px 0px rgb(0 0 0 / 20%);
+}
+.boton-1:hover{
+    background-color: darkcyan;
+    color: #fafafa;
+}
+
+.container-card{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+    margin-top: 50px;
+}
+.card{
+    font-size: 1.6rem;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 280px;
+    padding: 0px 25px;
+    box-shadow: 0px 5px 25px 0px rgb(0 0 0 / 20%);
+}
+.card-titulo{
+    text-align: center;
+    padding-top: 15px;
+}
+.card-subtitulo{
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+.Datos{
+    padding: 20px;
+}
+div ul li{
+    list-style-type: none;
+}
+.text-1{
+    padding-top: 15px;
 }
