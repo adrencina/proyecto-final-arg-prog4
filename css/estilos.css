@@ -3,12 +3,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    color: #f2f2f2;
 }
 html{
     font-size: 62.5%;
 }
 header{
-    background-color: #2d6363;
+    background-color: #348e91;
     font-size: 2rem;
     display: flex;
     align-items: center;
@@ -16,13 +17,17 @@ header{
     justify-content: center;
     padding: auto;
     padding-top: 60px;
-    color: white;
     text-align: center;
 }
-picture img{
+header picture img{
     border-radius: 100%;
     height: 200px;
     box-shadow: 0px 5px 25px 0px rgb(0 0 0 / 20%);
+}
+.subtitulo-header{
+    color:#0a0c0d;
+    font-weight:normal;
+    font-size: 2.3rem;
 }
 
 nav ul{
@@ -41,32 +46,35 @@ li a{
     font-style: none;
     padding: 5px;
     margin: 0 10px;
-    color: #dbdbdb;
     text-transform: uppercase;
 }
 
 li a:hover{
-    background-color: darkcyan;
-    color: #fafafa;
+    background-color:#213635;
     border-radius: 5px;
 
 }
 
 .boton-1{
-    background-color:#edf119e3;
-    color:#409696;
+    background-color:transparent;
+    color:#f2f2f2;
+    border: #f2f2f2 solid 1px;
     font-size: 1.5rem;
     border-radius: 5px;
     padding: 5px;
-    border-color:transparent;
     margin: 20px 5px 0px 5px;
     box-shadow: 0px 5px 25px 0px rgb(0 0 0 / 20%);
 }
 .boton-1:hover{
-    background-color: darkcyan;
-    color: #fafafa;
+    background-color:#f2f2f2;
+    color:#213635;
 }
-
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .container-card{
     display:flex;
     flex-direction: column;
@@ -87,21 +95,66 @@ li a:hover{
     box-shadow: 0px 5px 25px 0px rgb(0 0 0 / 20%);
 }
 .card-titulo{
+    position: relative;
+    color:#348e91;
     text-align: center;
-    padding-top: 15px;
+    margin-top: 20px;
 }
-.card-subtitulo{
-    text-align: center;
-    padding-top: 10px;
+.card-datos{
+    margin:auto 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+}
+.datos-basic{
+    width: 100%;
+    margin: 0px 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
-
-.Datos{
-    padding: 20px;
-}
-div ul li{
-    list-style-type: none;
-}
 .text-1{
+    color: #213635;
     padding-top: 15px;
+    font-weight: bold;
+}
+.text-2{
+    color: #213635;
+    padding-top: 15px;
+}
+.container-experiencia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 90vh;
+}
+
+.container-card-experiencia{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-exp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 400px;
+    margin: 0 15px;
+    background-color: #213635;
+    border-radius: 2%;
+}
+.card-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: auto;
 }
