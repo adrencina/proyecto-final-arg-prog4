@@ -12,23 +12,24 @@
 </head>
 <body>
     <header>
-        <picture>
-            <img src="./img/foto-cv.jpg" alt="foto personal">
-        </picture>
-        <div>
-            <h1>ADRIÁN ENCINA</h1>
-            <p class="subtitulo-header">Desarrollador Front-end</p>
-        </div>
-        <div class="boton-header">
-            <button class="boton-1" type="submit">Descargar CV</button>
-        </div>
         <nav>
             <ul>
                 <li><a href="#info-personal">información</a></li>
                 <li><a href="#experiencia">experiencia</a></li>
                 <li><a href="#habilidades">habilidades</a></li>
+                <li><a href="#habilidades">Contacto</a></li>
             </ul>
         </nav>
+        <picture>
+            <img src="./img/foto-cv.jpg" alt="foto personal">
+        </picture>
+        <div>
+            <h1 class="titulo-header" >ADRIÁN ENCINA</h1>
+            <p class="subtitulo-header">Desarrollador Front-end</p>
+        </div>
+        <div class="boton-header">
+            <button class="boton-1" type="submit">Descargar CV</button>
+        </div>
     </header>
     <main>
         <section class="container-card" id="info-personal">
@@ -73,50 +74,88 @@
             </section>
         <br>
         <section class="container-experiencia" id="experiencia">
-            <div class="titulo-experiencia">
-                <h2>Experiencia Laboral</h2>
+            <div >
+                <h2 class="titulo-experiencia">Experiencia Laboral</h2>
             </div>
             <div class="container-card-experiencia">
 
                 <div class="card-exp">
                     <picture>
-                    <img src="./img/trabajo1.jpg" alt="Foto de Renault Sur">
+                    <img class="img-card" src="./img/trabajo1.jpg" alt="Foto de Renault Sur">
                     </picture>
                     <div class="card-text">
-                    <h2>Renault Sur</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam enim quisquam, in doloribus id iusto.</p>
-                    <h3>Fecha del trabajo</h3>
+                    <h2 class="titulo-card" >Renault Sur</h2>
+                    <p class="parrafo-card" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam enim quisquam, in doloribus id iusto.</p>
+                    <h3 class="footer-card">Fecha del trabajo</h3>
                     </div>
                 </div>
             
                 <div class="card-exp">
                     <picture>
-                    <img src="./img/trabajo2.jpg" alt="Foto del Correo Argentino">
+                    <img class="img-card" src="./img/trabajo2.jpg" alt="Foto del Correo Argentino">
                     </picture>
                     <div class="card-text">
-                    <h2>Correo Argentino</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam enim quisquam, in doloribus id iusto.</p>
-                    <h3>Fecha del trabajo</h3>
+                    <h2 class="titulo-card" >Correo Argentino</h2>
+                    <p class="parrafo-card" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam enim quisquam, in doloribus id iusto.</p>
+                    <h3 class="footer-card">Fecha del trabajo</h3>
                     </div>
                 </div>
 
                 <div class="card-exp">
                     <picture>
-                    <img src="./img/trabajo3.jpg" alt="Foto de Lo Grasso Iluminación">
+                    <img class="img-card" src="./img/trabajo3.jpg" alt="Foto de Lo Grasso Iluminación">
                     </picture>
                     <div class="card-text">
-                    <h2>Lo Grasso Iluminación</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam enim quisquam, in doloribus id iusto.</p>
-                    <h3>Fecha del trabajo</h3>
+                    <h2 class="titulo-card" >Lo Grasso Iluminación</h2>
+                    <p class="parrafo-card" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam enim quisquam, in doloribus id iusto.</p>
+                    <h3 class="footer-card" >Fecha del trabajo</h3>
                     </div>
                 </div>
             </div>    
         </section>
         <br>
         <section class="container-card" id="habilidades">
-            <div class="3">
+           <!--  <div class="3">
             <h2>habilidades</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae possimus soluta, veniam perferendis ad eaque voluptates. Eaque recusandae magni praesentium.</p>
+            </div> -->
+            <div class="card">
+                <h2 class="card-titulo">Habilidades</h2>
+                <div class="card-datos">
+                    <div class="datos-basic">
+                        <div class="Datos">
+                            <div class="text-1">Nombre:</div>
+                            <div class="text-1">Apellido:</div>
+                            <div class="text-1">D.N.I.:</div>
+                            <div class="text-1">Fecha Nac.:</div>
+                            <div class="text-1">Tel. Cel.:</div>
+                        </div>
+                        <div class="Datos">
+                            <div class="text-2">Adrián.</div>
+                            <div class="text-2">Encina.</div>
+                            <div class="text-2">34086327</div>
+                            <div class="text-2">23/09/1988.</div>
+                            <div class="text-2">+54 9 (0221) 3613573</div>
+                        </div>
+                    </div>
+
+                    <div class="datos-basic">
+                        <div class="Datos">
+                            <div class="text-1">Dirección:</div>
+                            <div class="text-1">Localidad:</div>
+                            <div class="text-1">Provincia:</div>
+                            <div class="text-1">País:</div>
+                            <div class="text-1">E-mail:</div>
+                        </div>
+                        <div class="Datos">
+                            <div class="text-2">Calle 47 N°1921.</div>
+                            <div class="text-2">La Plata.</div>
+                            <div class="text-2">Buenos Aires.</div>
+                            <div class="text-2">Argentina.</div>
+                            <div class="text-2">adr.encina@gmail.com</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
