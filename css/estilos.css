@@ -162,6 +162,7 @@ main{
 div i{
     color:#348e91;
     font-size: 3.3rem;
+    cursor: pointer;
 }
 
 /** estilos section Información **/
@@ -201,6 +202,22 @@ div i{
     padding: 20px;
 }
 
+/* .icono-img {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .icono.desplazado {
+    transform: translateY(20px);
+  }
+  
+  .texto-iconos {
+    display: none;
+    transform: translateY(-20px);
+    color:#213635;
+    font-size: 2rem;
+  }
+  
+ */
 
 
 
