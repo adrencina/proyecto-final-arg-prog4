@@ -11,9 +11,21 @@
     <script src="https://kit.fontawesome.com/4a6ab54212.js" crossorigin="anonymous"></script>
     <title>Curriculum Vitae</title>
 </head>
-<body>
-    <header>
-        <nav>
+<body class="container-body">
+    <header class="main-header">
+        <div class="div1-header">
+            <picture class="img-header">
+                <img src="./img/foto-cv.jpg" alt="foto personal">
+            </picture>
+        </div>
+        <div class="div2-header">
+            <h1 class="titulo-header">Pérez Juan</h1>
+            <p class="subtitulo-header">Desarrollador Front-end</p>
+            <div class="boton-header">
+                <button class="boton-1" type="submit">Descargar CV</button>
+            </div>
+        </div>
+        <nav class="nav-header">
             <ul>
                 <li><a href="#info-personal">información</a></li>
                 <li><a href="#experiencia">experiencia</a></li>
@@ -21,16 +33,6 @@
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
-        <picture>
-            <img src="./img/foto-cv.jpg" alt="foto personal">
-        </picture>
-        <div>
-            <h1 class="titulo-header" >ADRIÁN ENCINA</h1>
-            <p class="subtitulo-header">Desarrollador Front-end</p>
-        </div>
-        <div class="boton-header">
-            <button class="boton-1" type="submit">Descargar CV</button>
-        </div>
     </header>
     <main>
         <section class="container-info" id="info-personal">
@@ -40,7 +42,7 @@
                     <div class="iconos-card">
                         <div class="iconos">
                             <div class="iconos-img">
-                                <i class="fa-sharp fa-solid fa-user"></i>
+                                <i class="iconoInfo fa-sharp fa-solid fa-user"></i>
                             </div>
                             <div class="iconos-img">
                                 <i class="fa-solid fa-calendar-days"></i>
