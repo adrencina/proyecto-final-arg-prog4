@@ -3,31 +3,56 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    color: #f2f2f2;
-}
-html{
-    font-size: 62.5%;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.main-header{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #348e91;
-    font-size: 1.5rem;
-    height: auto;
-    box-shadow: 0px 0px 20px 5px rgb(0 0 0 / 20%);
+    color: var(--color-4);
 }
 
+/* Variables de Colores */
+:root{
+    --color-1: #21274b;
+}
+:root{
+    --color-2: #545daa;
+}
+:root{
+    --color-3: #959dfa;
+}
+:root{
+    --color-4: #e6e9f6;
+}
+:root{
+    --color-5: #140f07;
+}
+/* Variables de Colores */
+
+html{
+    font-size: 62.5%;
+    background-color: var(--color-2);
+    width: 100%;
+}
+.container-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Inicio CSS Header y sus componentes internos */
+
+.main-header{
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--color-1);
+    font-size: 1.5rem;
+    height: 85vh;
+    box-shadow: 0px 0px 20px 5px rgb(0 0 0 / 20%);
+}
 .div1-header{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40%;
+    width: 40vw;
     height: auto;
     margin: 5% 0;
 }
@@ -36,34 +61,33 @@ html{
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    width: 50%;
+    width: 60vw;
     height: auto;
     margin: 5% 0;
 }
-
 .nav-header{
-    width: 100%;
+    width: 100vw;
+    background-color: var(--color-1);
+    position:absolute;
+    top:80vh;
+    right: auto;
+    left: auto;
 }
-
-
 header picture img{
     border-radius: 100%;
     height: 250px;
     box-shadow: 0px 5px 25px 0px rgb(0 0 0 / 20%);
 }
-
 .titulo-header{
-    font-size: 9rem;
+    font-size: 10rem;
     margin: 0px 0px;
 }
-
 .subtitulo-header{
-    color:#0a0c0d;
+    color: var(--color-3);
     font-weight: 500;
     font-size: 3rem;
     margin: 5px 0px;
 }
-
 nav ul{
     list-style: none;
     display: flex;
@@ -82,17 +106,14 @@ li a{
     margin: 0 10px;
     text-transform: uppercase;
 }
-
 li a:hover{
-    background-color:#11e0e07e;
+    background-color: var(--color-3);
     border-radius: 5px;
-
 }
-
 .boton-1{
     background-color:transparent;
-    color:#f2f2f2;
-    border: #f2f2f2 solid 1px;
+    color: var(--color-4);
+    border: var(--color-4) solid 1px;
     font-size: 1.8rem;
     border-radius: 5px;
     padding: 5px;
@@ -100,95 +121,30 @@ li a:hover{
     box-shadow: 0px 5px 25px 0px rgb(0 0 0 / 20%);
 }
 .boton-1:hover{
-    background-color:#f2f2f2;
-    color:#213635;
-}
-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    background-color: var(--color-4);
+    color:#140f07;
 }
 
-/** Containers de las sections **/
-.container{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    height: 100vh;
-    margin-top: 50px;
-}
-.container-contacto{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    height: 90vh;
-}
+/* Fín CSS Header y sus componentes internos */
+
+/* Inicio CSS Section Información */
+
 .container-info{
     display:flex;
     flex-direction: column;
     align-items: center;
-    justify-content:space-around;
-    width: 100vw;
-    height: 60vh;
+    justify-content:center;
+    width: 100%;
+    height: 85vh;
 }
-
-.card{
+.card-iconos{
     font-size: 1.6rem;
-    background-color: #fafafa;
     display: flex;
     flex-direction: column;
-    width: 90vw;
-    height: 70vh;
+    width: 100vw;
+    height: 40vh;
     padding: 0px 25px;
-    box-shadow: 0px 5px 25px 0px rgb(0 0 0 / 20%);
 }
-.card-titulo, .titulo-experiencia{
-    font-size: 2.5rem;
-    color:#348e91;
-    text-align: center;
-    margin: 20px 0px;
-}
-.card-datos{
-    margin:auto 0px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content:space-around;
-}
-.datos-basic{
-    width: 100%;
-    margin: 0px 5%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.text-1{
-    color: #213635;
-    padding-top: 15px;
-    font-weight: bold;
-}
-.text-2{
-    color: #213635;
-    padding-top: 15px;
-}
-
-/** iconos **/
-
-div i{
-    color:#348e91;
-    font-size: 3.3rem;
-    cursor: pointer;
-}
-
-/** estilos section Información **/
-
 .iconos-card{
     width: 100%;
     height: 100%;
@@ -196,98 +152,58 @@ div i{
     flex-direction: column;
     justify-content: center;
 }
-
 .iconos{
     display: flex;
     align-items: center;
     justify-content:space-around;
 }
-
-.card-iconos{
-    font-size: 1.6rem;
-    background-color: #fafafa;
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: 40vh;
-    padding: 0px 25px;
-    box-shadow: 0px 5px 25px 0px rgb(0 0 0 / 20%);
+/** iconos **/
+div i{
+    color: var(--color-4);
+    font-size: 4rem;
+    cursor: pointer;
 }
-.iconos-img{
-    display: flex;
+div i:hover{
+    transform: translateY(-50px);
+}
+
+#icono1-infoh2,
+#icono2-infoh2,
+#icono3-infoh2,
+#icono4-infoh2,
+#icono5-infoh2{
+    color: var(--color-5);
+}
+
+/* Fín CSS Section Información */
+
+/* Inicio CSS Section Experiencia */
+
+.container-experiencia{
+    background-color: var(--color-1);
+    display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    margin: 50px 0;
+    height: 85vh;
 }
-.iconos-img h3{
-    color: #213635;
-    padding: 20px;
+
+.titulo-experiencia{
+    font-size: 2.5rem;
+    color: var(--color-4);
+    text-align: center;
+    margin: 20px 0px;
 }
-
-/* ver css de iconos acá */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .icono-img {
-    transition: transform 0.2s ease-in-out;
-  }
-  
-  .icono.desplazado {
-    transform: translateY(20px);
-  }
-  
-  .texto-iconos {
-    display: none;
-    transform: translateY(-20px);
-    color:#213635;
-    font-size: 2rem;
-  }
-  
- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .container-card-experiencia{
     margin: 20px 0px;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
     height: 70vh;
 }
 
@@ -295,47 +211,66 @@ div i{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 300px;
+    width: 30%;
     height: 400px;
     margin: 0 15px;
-    background-color:#f2f2f2;
+    background-color: var(--color-4);
     border-radius: 5%;
     box-shadow: 0px 5px 25px 0px rgb(0 0 0 / 30%);
 }
-.card-text{
-    display: flex;
+
+/* Fín CSS Section Experiencia */
+
+
+/* Inicio CSS Section Habilidades */
+
+.container-habilidades{
+    display:flex;
     flex-direction: column;
     align-items: center;
-    width: 80%;
-    height: auto;
+    justify-content: center;
+    width: 100vw;
+    margin: 50px 0;
+    height: 85vh;
 }
-.img-card{
-    border-top-left-radius: 5%;
-    border-top-right-radius: 5%;
-    box-shadow: 0px 0px 25px 0px rgb(0 0 0 / 10%);
+.card-habilidades{
+    width: 100%;
+    height: 85vh;
 }
-.titulo-card{
-    color: #348e91;
-    font-size: 2.2rem;
-    margin: 10px 0px;
-}
-.parrafo-card{
-    color: #213635;
-    font-size: 1.7rem;
-    margin: 10px 0px;
+.card-titulo{
+    font-size: 2.5rem;
+    color: var(--color-4);
+    text-align: center;
+    margin: 20px 0px;
 }
 
-.footer-card{
-    color:#213635;
-    font-size: 1.5rem;
-    margin: 10px 0px;
+/* Fín CSS Section Habilidades */
+
+/* Inicio CSS Section Contacto */
+
+.container-contacto{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90vh;
 }
 
+.card{
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 85vh;
+}
 
-/** Footer **/
+/* Fín CSS Section Contacto */
+
+/* Inicio CSS Footer */
 
 .container-footer{
-    background-color:#348e91;
+    background-color: var(--color-1);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -346,3 +281,5 @@ div i{
     font-size: 1.8rem;
     text-align: center;
 }
+
+/* Fín CSS Footer */

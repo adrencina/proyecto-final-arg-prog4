@@ -4,15 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="./css/estilos.css">
+    <!-- Link al archivo Css -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;900&display=swap" rel="stylesheet">
+    <!-- Link Fuentes de Google -->
+
     <script src="https://kit.fontawesome.com/4a6ab54212.js" crossorigin="anonymous"></script>
+    <!-- Link Js de los iconos -->
+
     <title>Curriculum Vitae</title>
+
 </head>
 <body class="container-body">
-    <header class="main-header">
+    <header class="main-header"> <!-- Header -->
         <div class="div1-header">
             <picture class="img-header">
                 <img src="./img/foto-cv.jpg" alt="foto personal">
@@ -22,10 +30,10 @@
             <h1 class="titulo-header">Pérez Juan</h1>
             <p class="subtitulo-header">Desarrollador Front-end</p>
             <div class="boton-header">
-                <button class="boton-1" type="submit">Descargar CV</button>
+                <button  class="boton-1" type="submit">Descargar CV</button>
             </div>
         </div>
-        <nav class="nav-header">
+        <nav id="menuHeader" class="nav-header">
             <ul>
                 <li><a href="#info-personal">información</a></li>
                 <li><a href="#experiencia">experiencia</a></li>
@@ -35,30 +43,32 @@
         </nav>
     </header>
     <main>
-        <section class="container-info" id="info-personal">
+        <section class="container-info" id="info-personal"> <!-- Section Información -->
             <div class="card-iconos">
-                <!-- <h2 class="card-titulo">Información Personal</h2> -->
-                <!-- <div class="iconos-panel"> -->
                     <div class="iconos-card">
                         <div class="iconos">
                             <div class="iconos-img">
-                                <i class="iconoInfo fa-sharp fa-solid fa-user"></i>
+                                <i id="icono1" class="fa-sharp fa-solid fa-user"></i>
+                                <h2 id="icono1-infoh2">USER</h2>
                             </div>
                             <div class="iconos-img">
-                                <i class="fa-solid fa-calendar-days"></i>
+                                <i id="icono2" class="fa-solid fa-calendar-days"></i>
+                                <h2 id="icono2-infoh2">USER</h2>
                             </div>
                             <div class="iconos-img">
-                                <i class="fa-solid fa-phone"></i>
+                                <i id="icono3" class="fa-solid fa-phone"></i>
+                                <h2 id="icono3-infoh2">USER</h2>
                             </div>
                             <div class="iconos-img">
-                                <i class="fa-sharp fa-solid fa-map-location-dot"></i>
+                                <i id="icono4" class="fa-sharp fa-solid fa-map-location-dot"></i>
+                                <h2 id="icono4-infoh2">USER</h2>
                             </div>
                             <div class="iconos-img">
-                                <i class="fa-solid fa-envelope"></i>
+                                <i id="icono5" class="fa-solid fa-envelope"></i>
+                                <h2 id="icono5-infoh2">USER</h2>
                             </div>
                         </div>
                     </div>
-                <!-- </div> -->
             </div>
             <!-- <div class="Datos">
                             <div class="text-2">Adrián.</div>
@@ -76,11 +86,11 @@
                         </div> -->
         </section>
         <br>
-        <section class="container" id="experiencia">
+        <section class="container-experiencia" id="experiencia"> <!-- Section Experiencia -->
             <div >
                 <h2 class="titulo-experiencia">Experiencia Laboral</h2>
             </div>
-            <div class="container-card-experiencia">
+            <!-- <div class="container-card-experiencia">
 
                 <div class="card-exp">
                     <picture>
@@ -114,92 +124,24 @@
                     <h3 class="footer-card" >Fecha del trabajo</h3>
                     </div>
                 </div>
-            </div>    
+            </div>  -->   
         </section>
         <br>
-        <section class="container" id="habilidades">
-            <div class="card">
+        <section class=".container-habilidades" id="habilidades"> <!-- Section Habilidades -->
+            <div class="card-habilidades">
                 <h2 class="card-titulo">Habilidades</h2>
-                <div class="card-datos">
-                    <div class="datos-basic">
-                        <div class="Datos">
-                            <div class="text-1">Nombre:</div>
-                            <div class="text-1">Apellido:</div>
-                            <div class="text-1">D.N.I.:</div>
-                            <div class="text-1">Fecha Nac.:</div>
-                            <div class="text-1">Tel. Cel.:</div>
-                        </div>
-                        <div class="Datos">
-                            <div class="text-2">Adrián.</div>
-                            <div class="text-2">Encina.</div>
-                            <div class="text-2">34086327</div>
-                            <div class="text-2">23/09/1988.</div>
-                            <div class="text-2">+54 9 (0221) 3613573</div>
-                        </div>
-                    </div>
-
-                    <div class="datos-basic">
-                        <div class="Datos">
-                            <div class="text-1">Dirección:</div>
-                            <div class="text-1">Localidad:</div>
-                            <div class="text-1">Provincia:</div>
-                            <div class="text-1">País:</div>
-                            <div class="text-1">E-mail:</div>
-                        </div>
-                        <div class="Datos">
-                            <div class="text-2">Calle 47 N°1921.</div>
-                            <div class="text-2">La Plata.</div>
-                            <div class="text-2">Buenos Aires.</div>
-                            <div class="text-2">Argentina.</div>
-                            <div class="text-2">adr.encina@gmail.com</div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
         <br>
-        <section class="container-contacto" id="contacto">
+        <section class="container-contacto" id="contacto"> <!-- Section Contacto -->
             <div class="card">
-                <h2 class="card-titulo">Habilidades</h2>
-                <div class="card-datos">
-                    <div class="datos-basic">
-                        <div class="Datos">
-                            <div class="text-1">Nombre:</div>
-                            <div class="text-1">Apellido:</div>
-                            <div class="text-1">D.N.I.:</div>
-                            <div class="text-1">Fecha Nac.:</div>
-                            <div class="text-1">Tel. Cel.:</div>
-                        </div>
-                        <div class="Datos">
-                            <div class="text-2">Adrián.</div>
-                            <div class="text-2">Encina.</div>
-                            <div class="text-2">34086327</div>
-                            <div class="text-2">23/09/1988.</div>
-                            <div class="text-2">+54 9 (0221) 3613573</div>
-                        </div>
-                    </div>
-                    <div class="datos-basic">
-                        <div class="Datos">
-                            <div class="text-1">Dirección:</div>
-                            <div class="text-1">Localidad:</div>
-                            <div class="text-1">Provincia:</div>
-                            <div class="text-1">País:</div>
-                            <div class="text-1">E-mail:</div>
-                        </div>
-                        <div class="Datos">
-                            <div class="text-2">Calle 47 N°1921.</div>
-                            <div class="text-2">La Plata.</div>
-                            <div class="text-2">Buenos Aires.</div>
-                            <div class="text-2">Argentina.</div>
-                            <div class="text-2">adr.encina@gmail.com</div>
-                        </div>
-                    </div>
-                </div>
+                <h2 class="card-titulo">Formulario de Contacto</h2>
             </div>
         </section>
+        <br>
+        <script src="./js/script.js"></script> <!-- link al archivo Js -->
     </main>
-    <script src="./js/script.js"></script>
-    <footer>
+    <footer> <!-- Footer -->
         <div class="container-footer">
             <h4> Desarrollado por Encina Adrián &copy; 2023 </h4>
         </div>
