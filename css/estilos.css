@@ -137,7 +137,7 @@ li a:hover{
     width: 100%;
     height: 85vh;
 }
-.card-iconos{
+.card-icon{
     font-size: 1.6rem;
     display: flex;
     flex-direction: column;
@@ -145,34 +145,61 @@ li a:hover{
     height: 40vh;
     padding: 0px 25px;
 }
-.iconos-card{
+.icono-card{
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.iconos{
+.icon{
     display: flex;
     align-items: center;
     justify-content:space-around;
 }
 /** iconos **/
 div i{
-    color: var(--color-4);
-    font-size: 4rem;
-    cursor: pointer;
+    color: var(--color-2);
+    font-size: 5rem;
 }
-div i:hover{
-    transform: translateY(-50px);
+.icon-container {
+    display: inline-block;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 25%;
+    background-color: #ffffffb3;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.6s ease-in-out;
+    margin: 0px 30px;
 }
-
-#icono1-infoh2,
-#icono2-infoh2,
-#icono3-infoh2,
-#icono4-infoh2,
-#icono5-infoh2{
-    color: var(--color-5);
+.icon-container i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    transition: all 0.4s ease-in-out;
+}
+.caja-icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease-in-out;
+}
+.icontext{
+    margin: 20px 0;
+    transition: all 0.4s ease-in-out;
+}
+.icon-container:hover {
+    background-color: #ffffff;
+    transform: translateY(-20px);
+    width: 70px;
+    height: 70px;
+}
+.icon-container:hover i {
+    font-size: 3.5rem;
 }
 
 /* Fín CSS Section Información */
@@ -257,13 +284,91 @@ div i:hover{
     height: 90vh;
 }
 
-.card{
+.cont-titulo{
+    font-size: 2.5rem;
+    color: var(--color-4);
+    text-align: center;
+    margin: 20px 0px;
+}
+.contacto-titulo{
     font-size: 1.6rem;
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 85vh;
 }
+
+
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+div {
+    margin-bottom: 1rem;
+}
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+input,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+button:hover {
+    background-color: #0069d9;
+}
+label input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Fín CSS Section Contacto */
 

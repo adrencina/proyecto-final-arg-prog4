@@ -44,29 +44,46 @@
     </header>
     <main>
         <section class="container-info" id="info-personal"> <!-- Section Información -->
-            <div class="card-iconos">
-                    <div class="iconos-card">
-                        <div class="iconos">
-                            <div class="iconos-img">
-                                <i id="icono1" class="fa-sharp fa-solid fa-user"></i>
-                                <h2 id="icono1-infoh2">USER</h2>
+            <div class="card-icon">
+                    <div class="icono-card">
+                        <div class="icon">
+
+
+                            <div class="caja-icon" >
+                            <div class="icon-container">
+                                <i class="fa-sharp fa-solid fa-user"></i>
                             </div>
-                            <div class="iconos-img">
-                                <i id="icono2" class="fa-solid fa-calendar-days"></i>
-                                <h2 id="icono2-infoh2">USER</h2>
+                                <h3 class="icontext">Pérez Juan</h3>
                             </div>
-                            <div class="iconos-img">
-                                <i id="icono3" class="fa-solid fa-phone"></i>
-                                <h2 id="icono3-infoh2">USER</h2>
+
+                            <div class="caja-icon" >
+                                <div class="icon-container">
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                </div>
+                                    <h3 class="icontext">23/09/1988</h3>
                             </div>
-                            <div class="iconos-img">
-                                <i id="icono4" class="fa-sharp fa-solid fa-map-location-dot"></i>
-                                <h2 id="icono4-infoh2">USER</h2>
+
+                            <div class="caja-icon" >
+                                <div class="icon-container">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                    <h3 class="icontext">(221) 15-3613573</h3>
                             </div>
-                            <div class="iconos-img">
-                                <i id="icono5" class="fa-solid fa-envelope"></i>
-                                <h2 id="icono5-infoh2">USER</h2>
+
+                            <div class="caja-icon" >
+                                <div class="icon-container">
+                                    <i class="fa-sharp fa-solid fa-map-location-dot"></i>
+                                </div>
+                                    <h3 class="icontext">Bs.As. - La Plata</h3>
                             </div>
+
+                            <div class="caja-icon" >
+                                <div class="icon-container">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                    <h3 class="icontext">adr.encina@gmail.com</h3>
+                            </div>
+
                         </div>
                     </div>
             </div>
@@ -134,9 +151,35 @@
         </section>
         <br>
         <section class="container-contacto" id="contacto"> <!-- Section Contacto -->
-            <div class="card">
-                <h2 class="card-titulo">Formulario de Contacto</h2>
+            <div class="contacto-titulo">
+                <h2 class="cont-titulo">Formulario de Contacto</h2>
             </div>
+            <form>
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+                </div>
+                <div>
+                    <label>
+                        <input type="checkbox" name="check" required>
+                    He leído y acepto la política de privacidad
+                </label>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+
         </section>
         <br>
         <script src="./js/script.js"></script> <!-- link al archivo Js -->
