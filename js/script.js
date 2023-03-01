@@ -1,3 +1,9 @@
+
+
+
+
+/* Inicio menu fijo al hacer scroll */
+
 const menu = document.querySelector("#menuHeader");
 const menuOffsetTop = menu.offsetTop;
 
@@ -14,3 +20,7 @@ function fixMenu() {
 }
 
 window.addEventListener('scroll', fixMenu);
+
+/* Fín menu fijo al hacer scroll */
+
+
