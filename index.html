@@ -104,8 +104,19 @@
         </section>
         <br>
         <section class="container-experiencia" id="experiencia"> <!-- Section Experiencia -->
-            <div >
-                <h2 class="titulo-experiencia">Experiencia Laboral</h2>
+            <div class="experiencia-caja">
+                <h2 class="experiencia-titulo">Experiencia Laboral</h2>
+                
+
+
+
+
+
+
+
+
+
+
             </div>
             <!-- <div class="container-card-experiencia">
 
@@ -145,41 +156,55 @@
         </section>
         <br>
         <section class=".container-habilidades" id="habilidades"> <!-- Section Habilidades -->
-            <div class="card-habilidades">
-                <h2 class="card-titulo">Habilidades</h2>
+            <div class="habilidades-caja">
+                <h2 class="habilidades-titulo">Habilidades</h2>
+
+
+
+
+
+
+
+
+
+
+
             </div>
         </section>
         <br>
         <section class="container-contacto" id="contacto"> <!-- Section Contacto -->
-            <div class="contacto-titulo">
-                <h2 class="cont-titulo">Formulario de Contacto</h2>
+            <div class="contacto-caja">
+                <h2 class="contacto-titulo">Formulario de Contacto</h2>
+                <form>
+                    <div class="nombyapelli">
+                        <div class="inpu-nombre">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="inpu-apellido">
+                            <label for="apellido">Apellido:</label>
+                            <input type="text" id="apellido" name="apellido" required>
+                        </div>
+                    </div>
+                    <div class="inp-email">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="text-mensj">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea class="text-mensaje" id="mensaje" name="mensaje" required></textarea>
+                    </div>
+                    <div class="div-check">
+                        <label class="lab-check">
+                            <input class="inp-check" type="checkbox" name="check" required>
+                            <div>
+                                <p>He leído y acepto la política de privacidad</p>
+                            </div>
+                        </label>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
             </div>
-            <form>
-                <div>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
-                </div>
-                <div>
-                    <label for="apellido">Apellido:</label>
-                    <input type="text" id="apellido" name="apellido" required>
-                </div>
-                <div>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div>
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" required></textarea>
-                </div>
-                <div>
-                    <label>
-                        <input type="checkbox" name="check" required>
-                    He leído y acepto la política de privacidad
-                </label>
-            </div>
-            <button type="submit">Enviar</button>
-        </form>
-
         </section>
         <br>
         <script src="./js/script.js"></script> <!-- link al archivo Js -->

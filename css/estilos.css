@@ -122,7 +122,7 @@ li a:hover{
 }
 .boton-1:hover{
     background-color: var(--color-4);
-    color:#140f07;
+    color: var(--color-5);
 }
 
 /* Fín CSS Header y sus componentes internos */
@@ -168,7 +168,7 @@ div i{
     width: 60px;
     height: 60px;
     border-radius: 25%;
-    background-color: #ffffffb3;
+    background-color: var(--color-4);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     transition: all 0.6s ease-in-out;
     margin: 0px 30px;
@@ -207,23 +207,32 @@ div i{
 /* Inicio CSS Section Experiencia */
 
 .container-experiencia{
-    background-color: var(--color-1);
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 100vw;
     margin: 50px 0;
     height: 85vh;
 }
-
-.titulo-experiencia{
+.experiencia-caja{
+    width: 100%;
+    height: 85vh;
+}
+.experiencia-titulo{
     font-size: 2.5rem;
     color: var(--color-4);
     text-align: center;
     margin: 20px 0px;
 }
 
+
+
+
+
+
+
+/* 
 .container-card-experiencia{
     margin: 20px 0px;
     display: flex;
@@ -245,6 +254,11 @@ div i{
     border-radius: 5%;
     box-shadow: 0px 5px 25px 0px rgb(0 0 0 / 30%);
 }
+ */
+
+
+
+
 
 /* Fín CSS Section Experiencia */
 
@@ -260,11 +274,11 @@ div i{
     margin: 50px 0;
     height: 85vh;
 }
-.card-habilidades{
+.habilidades-caja{
     width: 100%;
     height: 85vh;
 }
-.card-titulo{
+.habilidades-titulo{
     font-size: 2.5rem;
     color: var(--color-4);
     text-align: center;
@@ -281,31 +295,27 @@ div i{
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 90vh;
 }
-
-.cont-titulo{
+.contacto-caja{
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+    height: 85vh;
+}
+.contacto-titulo{
     font-size: 2.5rem;
     color: var(--color-4);
     text-align: center;
     margin: 20px 0px;
 }
-.contacto-titulo{
-    font-size: 1.6rem;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 85vh;
-}
-
-
 
 form {
-    max-width: 500px;
-    margin: 0 auto;
-}
-div {
-    margin-bottom: 1rem;
+    width: 60vw;
+    height: 60vh;
+    margin: 40px auto;
 }
 label {
     display: block;
@@ -317,58 +327,62 @@ textarea {
     display: block;
     width: 100%;
     padding: 0.5rem;
-    border: 1px solid #ccc;
+    border: 1px solid var(--color-4);
     border-radius: 4px;
     box-sizing: border-box;
-    font-size: 1rem;
     line-height: 1.5;
+    color: var(--color-1);
+    font-size: 1.8rem;
 }
 button {
-    background-color: #007bff;
-    color: #fff;
-    padding: 0.5rem 1rem;
+    background-color: var(--color-3);
+    color: var(--color-4);
+    padding: 0.6rem 1.4rem;
     border-radius: 4px;
     border: none;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 1.6rem;
     line-height: 1.5;
 }
 button:hover {
-    background-color: #0069d9;
+    background-color: var(--color-1);
 }
 label input[type="checkbox"] {
     margin-right: 0.5rem;
 }
 
+.nombyapelli{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
 
+.inp-email, .text-mensj, .div-check{
+    margin-bottom: 1rem;
+}
 
+.inpu-nombre, .inpu-apellido{
+    width: 48%;
+}
 
+.text-mensaje{
+    height: 200px;
+    color: var(--color-1);
+    font-size: 1.8rem;
+}
 
+.lab-check{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.inp-check{
+    width: 20px;
+}
 
 /* Fín CSS Section Contacto */
 
@@ -380,7 +394,7 @@ label input[type="checkbox"] {
     align-items: center;
     justify-content: center;
     width: 100vw;
-    height: 10vh;
+    height: 5vh;
 }
 .container-footer h4{
     font-size: 1.8rem;
