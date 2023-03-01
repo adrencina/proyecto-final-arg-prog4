@@ -295,12 +295,12 @@ div i{
     align-items: center;
     justify-content: center;
     width: 100vw;
-    margin: 50px 0;
-    height: 85vh;
+    margin: 80px 0;
+    height: 90vh;
 }
 .habilidades-caja{
     position: relative;
-    top: 250px;
+    top: 200px;
     display: flex;
     flex-direction: column;
     width: 80vw;
@@ -328,7 +328,7 @@ div i{
 
 .skill-bar {
     height: 25px;
-    background-color: #f2f2f2;
+    background-color: var(--color-4);
     border-radius: 10px;
 }
 
@@ -346,29 +346,6 @@ div i{
 .porcent{
     font-size: 1.9rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Fín CSS Section Habilidades */
 
@@ -394,7 +371,7 @@ div i{
     font-size: 2.5rem;
     color: var(--color-4);
     text-align: center;
-    margin: 20px 0px;
+    margin: 100px 0px 50px 0px;
 }
 
 form {
