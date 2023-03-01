@@ -299,17 +299,53 @@ div i{
     height: 85vh;
 }
 .habilidades-caja{
-    width: 100%;
+    position: relative;
+    top: 250px;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
     height: 85vh;
+    margin: 0px auto;
 }
 .habilidades-titulo{
     font-size: 2.5rem;
     color: var(--color-4);
     text-align: center;
-    margin: 20px 0px;
+    margin: 50px 0px 40px 0px;
 }
 
+.skill {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
 
+.skill-name {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.skill-bar {
+    height: 25px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+
+.skill-progress {
+    height: 100%;
+    border-radius: 10px;
+    background-color: var(--color-1);
+    transition: width 1s ease-in-out;
+}
+
+.skill-percent {
+    margin-top: 5px;
+}
+
+.porcent{
+    font-size: 1.9rem;
+}
 
 
 

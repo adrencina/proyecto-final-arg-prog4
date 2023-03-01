@@ -23,4 +23,29 @@ window.addEventListener('scroll', fixMenu);
 
 /* Fín menu fijo al hacer scroll */
 
+/* Función para animar la barra */
+
+function animateProgress(id, percent) {
+    const progress = document.getElementById(id);
+    const percentText = document.getElementById(id + "-percent");
+
+    let width = 0;
+    const intervalId = setInterval(frame, 10);
+
+    function frame() {
+    if (width >= percent) {
+        clearInterval(intervalId);
+    } else {
+        width++;
+        progress.style.width = width + "%";
+        percentText.innerText = width + "%";
+    }
+}
+}
+
+animateProgress("html-progress", 95);
+animateProgress("css-progress", 85);
+animateProgress("js-progress", 60);
+
+
 
