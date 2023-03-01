@@ -69,6 +69,7 @@ html{
     width: 100vw;
     background-color: var(--color-1);
     position:absolute;
+    z-index: 1;
     top:80vh;
     right: auto;
     left: auto;
@@ -137,6 +138,14 @@ li a:hover{
     width: 100%;
     height: 85vh;
 }
+
+.informacion-titulo{
+    font-size: 2.5rem;
+    color: var(--color-4);
+    text-align: center;
+    margin: 20px 0px 80px 0px;
+}
+
 .card-icon{
     font-size: 1.6rem;
     display: flex;
@@ -210,21 +219,80 @@ div i{
     display:flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     width: 100vw;
-    margin: 50px 0;
-    height: 85vh;
+    margin-top: 50px;
+    margin-bottom: 120px;
+    height: 80vh;
 }
 .experiencia-caja{
     width: 100%;
-    height: 85vh;
+    height: 80vh;
 }
 .experiencia-titulo{
     font-size: 2.5rem;
     color: var(--color-4);
     text-align: center;
-    margin: 20px 0px;
+    margin: 100px 0px 40px 0px;
 }
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    opacity: 0.9;
+    border-radius: 10px;
+    box-shadow: 0px 5px 25px 0px rgb(0 0 0 / 30%);
+    cursor: pointer;
+    background-color: rgba(33, 39, 75, 0.702);
+}
+
+.caja-card{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.pictu-card{
+    width: 300px;
+    height: 200px;
+}
+
+.img-card{
+    width: 300px;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+
+.parrafo-card{
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 8px 15px;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
