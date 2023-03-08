@@ -200,8 +200,117 @@
             </div>
         </section>
         <br>
+
+
         <section class="container-contacto" id="contacto"> <!-- Section Contacto -->
-            <div class="contacto-caja">
+
+            <form action="" class="formulario" id="formulario">
+
+                        <!-- Grupo Nombre -->
+                    <div class="form-grupo-N" id="grupo-nombre">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <div class="form-grupo-input">
+                            <input type="text" class="form-input" name="nombre" id="nombre" placeholder="Tu nombre">
+                            <i class="form-validacion fa-sharp fa-solid fa-square-xmark"></i>
+                        </div>
+                        <p class="form-input-error">Solo se aceptan letras</p>
+                    </div>
+
+                    <!-- Grupo Apellido -->
+                    <div class="form-grupo-A" id="grupo-apellido">
+                        <label for="apellido" class="form-label">Apellido</label>
+                        <div class="form-grupo-input">
+                            <input type="text" class="form-input" name="apellido" id="apellido" placeholder="Tu apellido">
+                            <i class="form-validacion fa-sharp fa-solid fa-square-xmark"></i>
+                        </div>
+                        <p class="form-input-error">Solo se aceptan letras</p>
+                    </div>
+
+                    
+                        <!-- Grupo Correo -->
+                    <div class="form-grupo" id="grupo-correo">
+                        <label for="correo" class="form-label">Correo Electrónico</label>
+                        <div class="form-grupo-input">
+                            <input type="email" class="form-input" name="correo" id="correo" placeholder="tucorreo@correo.com">
+                            <i class="form-validacion fa-sharp fa-solid fa-square-xmark"></i>
+                        </div>
+                        <p class="form-input-error">El correo solo puede contener letras, números, puntos, guiones y guion bajo.</p>
+                    </div>
+
+                    <!-- Grupo Mensaje -->
+                    <div class="form-grupo" id="grupo-mensaje">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <div class="form-grupo-input">
+                            <textarea type="text" class="textarea-input form-input" name="mensaje" id="mensaje" placeholder="Escribe tu mensaje">
+                            </textarea>
+                            <i class="form-validacion fa-sharp fa-solid fa-square-xmark"></i>
+                        </div>
+                        <p class="form-input-error">Solo se aceptan letras</p>
+                    </div>
+
+                    <!-- Grupo Términos -->
+                    <div class="form-grupo" id="grupo-terminos">
+                        <label class="form-label">
+                            <input class="form-checkbox" type="checkbox" name="terminos" id="terminos">
+                            Acepto los Términos y Condiciones.
+                        </label>
+                    </div>
+
+                    <!-- Mensaje Aviso -->
+                    <div class="form-aviso" id="form-aviso">
+                        <p><i class="icon-aviso fa-solid fa-triangle-exclamation"></i><b>Error:</b> Por favor rellena el formulario correctamente.</p>
+                    </div>
+                    
+                    <!-- Grupo Boton Enviar -->
+                    <div class="form-grupo form-grupo-btn-enviar">
+                        <button type="submit" class="form-btn">Enviar</button>
+                        <p class="form-mensaje-exito" id="form-mensaje-exito">¡Mensaje enviado!</p>
+                    </div>
+
+
+                
+
+            </form>
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </section>
+        <br>
+
+
+
+
+
+
+
+
+        <!-- <div class="contacto-caja">
                 <h2 class="contacto-titulo">Formulario de Contacto</h2>
                 <form>
                     <div class="nombyapelli">
@@ -232,9 +341,7 @@
                     </div>
                     <button type="submit">Enviar</button>
                 </form>
-            </div>
-        </section>
-        <br>
+            </div> -->
         <script src="./js/script.js"></script> <!-- link al archivo Js -->
     </main>
     <footer> <!-- Footer -->
