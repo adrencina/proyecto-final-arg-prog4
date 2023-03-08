@@ -144,7 +144,7 @@ main{
     margin: 0 auto;
     width: 100vw;
     max-width: 80%;
-    min-height: 75vh;
+    min-height: 100vh;
     height: auto;
 }
 
@@ -159,8 +159,11 @@ main{
     font-size: 1.6rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100vw;
-    height: 40vh;
+    height: auto;
+    min-height: 100vh;
     padding: 0px 25px;
 }
 .icono-card{
@@ -232,7 +235,7 @@ div i{
     justify-content: flex-end;
     width: 100vw;
     max-width: 80%;
-    min-height: 75vh;
+    min-height: 100vh;
     height: auto;
     margin-top: 50px;
     margin-bottom: 120px;
@@ -242,7 +245,8 @@ div i{
 }
 .experiencia-caja{
     width: 100%;
-    height: 80vh;
+    height: auto;
+    min-height: 100vh;
 }
 .experiencia-titulo{
     font-size: 2.5rem;
@@ -312,30 +316,33 @@ div i{
     justify-content: center;
     width: 100vw;
     max-width: 80%;
-    margin: 80px auto;
-    min-height: 75vh;
+    margin: 0px auto;
+    min-height: 100vh;
     height: auto;
 }
 .habilidades-caja{
-    position: relative;
-    top: 200px;
     display: flex;
-    flex-direction: column;
-    width: 80vw;
-    height: 85vh;
-    margin: 0px auto;
+    flex-wrap: wrap;
+    width: 100vw;
+    max-width: 80%;
+    margin: auto;
+    min-height: 100vh;
+    height: auto;
 }
+
+
 .habilidades-titulo{
     font-size: 2.5rem;
     color: var(--color-4);
     text-align: center;
-    margin: 50px 0px 40px 0px;
+    margin: 0px auto;
+    margin-top: 80px;
 }
 
 .skill {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
 }
 
 .skill-name {
@@ -378,7 +385,14 @@ div i{
     max-width: 80%;
     margin: 0 auto;
     height: auto;
-    min-height: 75vh;
+    min-height: 100vh;
+}
+
+.contacto-titulo{
+    font-size: 2.5rem;
+    color: var(--color-4);
+    text-align: center;
+    margin: 80px auto;
 }
 
 .formulario{
@@ -386,6 +400,8 @@ div i{
     flex-wrap: wrap;
     width: 100vw;
     justify-content: center;
+    min-height: 100vh;
+    height: auto;
 }
 
 .form-grupo{
@@ -517,110 +533,6 @@ div i{
     font-size: 1.4rem;
     color: #119200;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-.contacto-caja{
-    font-size: 1.6rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: end;
-    width: 100%;
-    height: 100%;
-}
-.contacto-titulo{
-    font-size: 2.5rem;
-    color: var(--color-4);
-    text-align: center;
-    margin: 100px 0px 50px 0px;
-}
-
-form {
-    width: 60vw;
-    height: 60vh;
-    margin: 40px auto;
-}
-label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-}
-input,
-textarea {
-    display: block;
-    width: 100%;
-    padding: 0.5rem;
-    border: 1px solid var(--color-4);
-    border-radius: 4px;
-    box-sizing: border-box;
-    line-height: 1.5;
-    color: var(--color-1);
-    font-size: 1.8rem;
-}
-button {
-    background-color: var(--color-3);
-    color: var(--color-4);
-    padding: 0.6rem 1.4rem;
-    border-radius: 4px;
-    border: none;
-    cursor: pointer;
-    font-size: 1.6rem;
-    line-height: 1.5;
-}
-button:hover {
-    background-color: var(--color-1);
-}
-label input[type="checkbox"] {
-    margin-right: 0.5rem;
-}
-
-.nombyapelli{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 1rem;
-}
-
-.inp-email, .text-mensj, .div-check{
-    margin-bottom: 1rem;
-}
-
-.inpu-nombre, .inpu-apellido{
-    width: 48%;
-}
-
-.text-mensaje{
-    height: 200px;
-    color: var(--color-1);
-    font-size: 1.8rem;
-}
-
-.lab-check{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.inp-check{
-    width: 20px;
-}
-*/
-
-
-
 
 
 
